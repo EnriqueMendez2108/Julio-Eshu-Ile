@@ -29,10 +29,26 @@
 
     <!-- Sección Hero / Bienvenida -->
     <section id="inicio" class="hero">
+        <div class="hero-slides" aria-label="Galería de imágenes">
+            <div class="hero-slide is-active" aria-hidden="false">
+                <img src="img/julio.jpg" alt="Retrato de Julio Eshu Ilé">
+            </div>
+            <div class="hero-slide" aria-hidden="true">
+                <img src="img/julio2.jpg" alt="Imagen promocional de Julio Eshu Ilé y sus consultas espirituales">
+            </div>
+        </div>
         <div class="hero-content">
             <h2>Espiritu Vivo</h2>
             <p>Ayudo a las personas a reconstruir su vida medianteel autoconocimiento profundo, utilizando la tradición Yoruba como metodlogia</p>
             <a href="#orishas" class="btn">Conocer los Orishas</a>
+        </div>
+        <div class="hero-controls" aria-label="Controles de diapositivas">
+            <button class="hero-arrow hero-arrow--previous" type="button" aria-label="Imagen anterior">&#10094;</button>
+            <div class="hero-indicators">
+                <button class="hero-indicator is-active" type="button" aria-label="Mostrar imagen 1" aria-pressed="true"></button>
+                <button class="hero-indicator" type="button" aria-label="Mostrar imagen 2" aria-pressed="false"></button>
+            </div>
+            <button class="hero-arrow hero-arrow--next" type="button" aria-label="Imagen siguiente">&#10095;</button>
         </div>
     </section>
 
