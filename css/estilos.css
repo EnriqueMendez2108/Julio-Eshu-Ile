@@ -231,6 +231,21 @@ h1, h2, h3 {
     border-radius: 4px;
 }
 
+.about-card {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-card p + p {
+    margin-top: 1rem;
+}
+
+.about-card h3 {
+    margin: 1.75rem 0 0.75rem;
+    text-align: left;
+    color: var(--dark-gold);
+}
+
 /* Orishas */
 .orishas-section {
     background-color: #f0eee6;
