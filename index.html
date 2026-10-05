@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regla de Ocha - Tradición y Sabiduría Yoruba</title>
+    <!-- CSS y Google Fonts -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header class="header">
+        <div class="logo">
+            <h1>Julio Eshu Ilé</h1>
+            <span>Tradición Yoruba</span>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#filosofia">Filosofía</a></li>
+                <li><a href="#orishas">Los Orishas</a></li>
+                <li><a href="#patakies">Patakíes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero / Bienvenida -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Espiritu Vivo</h2>
+            <p>Ayudo a las personas a reconstruir su vida medianteel autoconocimiento profundo, utilizando la tradición Yoruba como metodlogia</p>
+            <a href="#orishas" class="btn">Conocer los Orishas</a>
+        </div>
+    </section>
+
+    <!-- Sección Filosofía / Principios -->
+    <section id="filosofia" class="container">
+        <h2>Fundamentos de la Religión Yoruba</h2>
+        <div class="cards-grid">
+            <div class="card-info">
+                <h3>Olódùmarè</h3>
+                <p>El Dios supremo, creador de todo lo existente. Fuente del Àṣẹ y principio de la vida universal.</p>
+            </div>
+            <div class="card-info">
+                <h3>Iwa Pele</h3>
+                <p>El buen carácter. Es la base ética fundamental de la tradición: vivir con humildad, respeto y bondad.</p>
+            </div>
+            <div class="card-info">
+                <h3>Los Orishas</h3>
+                <p>Emisarios divinos y fuerzas de la naturaleza que guían, velan y aconsejan a la humanidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería de Orishas (Interactiva) -->
+    <section id="orishas" class="orishas-section">
+        <h2>Principales Orishas</h2>
+        <p class="subtitle">Haz clic en cada uno para conocer sus atributos</p>
+        
+        <div class="orisha-grid">
+            <div class="orisha-card" onclick="mostrarDetalle('Elegguá', 'Dueño de los caminos, las puertas y el destino. Es el mensajero divinal.')">
+                <h3>Elegguá</h3>
+                <span class="tag red-black">Rojo y Negro</span>
+            </div>
+            <div class="orisha-card" onclick="mostrarDetalle('Obatalá', 'Padre de los Orishas, dueño de la cabeza, la paz, la pureza y los pensamientos.')">
+                <h3>Obatalá</h3>
+                <span class="tag white">Blanco</span>
+            </div>
+            <div class="orisha-card" onclick="mostrarDetalle('Yemayá', 'Madre de la vida, dueña de las aguas saladas y del océano. Símbolo de maternidad.')">
+                <h3>Yemayá</h3>
+                <span class="tag blue">Azul y Cristal</span>
+            </div>
+            <div class="orisha-card" onclick="mostrarDetalle('Shangó', 'Orisha del fuego, el trueno, los tambores Bata y la justicia.')">
+                <h3>Shangó</h3>
+                <span class="tag red-white">Rojo y Blanco</span>
+            </div>
+            <div class="orisha-card" onclick="mostrarDetalle('Oshún', 'Dueña de los ríos, el amor, la dulzura, la riqueza y la fertilidad.')">
+                <h3>Oshún</h3>
+                <span class="tag yellow">Amarillo y Dorado</span>
+            </div>
+            <div class="orisha-card" onclick="mostrarDetalle('Oggún', 'Orisha del hierro, el trabajo, los metales y la fuerza motora.')">
+                <h3>Oggún</h3>
+                <span class="tag green-black">Verde y Negro</span>
+            </div>
+        </div>
+
+        <!-- Modal de Información para JS -->
+        <div id="orisha-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="cerrarModal()">&times;</span>
+                <h3 id="modal-titulo"></h3>
+                <p id="modal-descripcion"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto o Consultas -->
+    <section id="contacto" class="container">
+        <h2>Contacto e Información</h2>
+        <form class="contact-form" id="form-contacto">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Escribe tu mensaje o consulta..." rows="5" required></textarea>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 Ilé Osha - Respeto, Tradición y Cultura Yoruba. Modupué (Gracias).</p>
+    </footer>
+
+    <nav class="contact-float" aria-label="Accesos rápidos de contacto">
+        <a class="contact-float__link contact-float__link--whatsapp" href="#contacto" aria-label="WhatsApp: ir a contacto" title="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.2 7.8c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .5.4l.7 1.6c.1.2.1.4 0 .5l-.5.7c-.2.2-.2.4 0 .6.4.7 1.1 1.4 1.8 1.8.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.4-.5.4-1.1.6-1.8.4-1.1-.3-2.3-.9-3.4-1.9-1-.9-1.7-2.1-2-3.2-.2-.8.1-1.5.4-2Z"/></svg>
+        </a>
+        <a class="contact-float__link contact-float__link--facebook" href="#contacto" aria-label="Facebook: ir a contacto" title="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.8v8h3.4Z"/></svg>
+        </a>
+        <a class="contact-float__link contact-float__link--instagram" href="#contacto" aria-label="Instagram: ir a contacto" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="instagram-dot" cx="17.6" cy="6.8" r="1"/></svg>
+        </a>
+        <a class="contact-float__link contact-float__link--phone" href="#contacto" aria-label="Teléfono: ir a contacto" title="Teléfono">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.5 10 7.8 8.3 9.5a14 14 0 0 0 6.2 6.2l1.7-1.7 4.3 2.8-.8 3.1c-.2.7-.9 1.1-1.6 1C10.6 19.7 4.3 13.4 3.1 5.9c-.1-.7.3-1.4 1-1.6l3.1-.8Z"/></svg>
+        </a>
+    </nav>
+
+    <script src="jss/main.js"></script>
+</body>
+</html>
